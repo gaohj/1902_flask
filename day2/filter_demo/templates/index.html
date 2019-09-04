@@ -14,5 +14,10 @@
     <p> {{ article|truncate(length=5) }}</p>
     <p>{{ test|default('junyunhui',boolean=true) }}</p>
     <p>{{ create_time|handle_time }}</p>
+    {% if age|int >= 18 %}
+        <p>欢迎光临</p>
+        {% else  %}
+        <p>回去长几年</p>
+    {% endif %}
 </body>
 </html>

@@ -14,7 +14,8 @@ def hello_world():
         'person':['zhangsan','lisi'],
         'article':'我的每一支笔 都知道你的名字 tianxin',
         'test':'',
-        'create_time':datetime(2018,9,4,16,56,13)
+        'create_time':datetime(2018,9,4,16,56,13),
+        'age':20
     }
     return render_template('index.html',**context)
 
