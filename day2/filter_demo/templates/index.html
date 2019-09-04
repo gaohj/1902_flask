@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    {{ position|abs }}
+{#    {{ signature or '此人很懒什么都没写'  }}#}
+{#    {{ signature |safe }}#}
+    {{ person |length }}
+    <p> {{ "你的名字是:%s" | format('kangbazi') }}</p>
+    <p> {{ article|replace('tianxin','tiantianquan') }}</p>
+    <p> {{ article|truncate(length=5) }}</p>
+    <p>{{ test|default('junyunhui',boolean=true) }}</p>
+    <p>{{ create_time|handle_time }}</p>
+</body>
+</html>
