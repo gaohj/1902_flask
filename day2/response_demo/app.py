@@ -1,4 +1,4 @@
-from flask import Flask,Response,render_template
+from flask import Flask,Response,render_template,request,redirect
 app = Flask(__name__)
 app.config['DEBUG']=True
 
@@ -18,6 +18,18 @@ def about():
 @app.route('/login/')
 def login():
     return render_template('index.html')
+
+@app.route('/profile/')
+def profile():
+    #http://127.0.0.1:5001/profile/?name=kangbazi
+    name = request.args.get('name')
+    if name:
+        return render_template('profile.html')
+    else:
+        return redirect('/login/')
+
+
+
 if __name__ == '__main__':
 
     app.run(port=5001)
