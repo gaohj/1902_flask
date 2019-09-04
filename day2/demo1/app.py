@@ -17,7 +17,7 @@ def tel(number):
 
 @app.route('/uuiddemo/<uuid:u_id>/')
 def hello_world(u_id):
-    return 'Hello World!我是5002 %s' % u_id
+    return 'Hello adfdfafdWorld!我是5002asdfsdafdsafsdfsadf %s' % u_id
 
 @app.route('/anys/<any(jiabin,liuqiong):any_id>/')
 def anys(any_id):
