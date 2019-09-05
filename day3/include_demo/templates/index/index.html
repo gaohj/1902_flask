@@ -9,6 +9,15 @@
     <div class="content">
         我是中间内容
     </div>
+    {% set classroom='python1901' %}
+    <p>教室名: {{ classroom }}</p>
+
+    {% with   %}
+        {% set username='wuhankangbazi' %}
+         <p>who are you? {{ username }}</p>
+    {% endwith %}
+
+    <p>who are you? {{ username }}</p>
     {% include 'common/footer.html' %}
 </body>
 </html>
