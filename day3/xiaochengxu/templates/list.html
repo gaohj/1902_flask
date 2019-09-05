@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% from 'macros/macros.html' import itemGroup %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/item.css") }}">
+    <style>
+        .content{
+            padding: 25px 10px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        {% for movie in items %}
+            {{ itemGroup(movie,category) }}
+        {% endfor %}
+    </div>
+{% endblock %}

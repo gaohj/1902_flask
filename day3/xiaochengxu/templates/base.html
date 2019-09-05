@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/base.css") }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="phone">
+        <div class="search-group">
+            <input class="search-input" type="text">
+        </div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

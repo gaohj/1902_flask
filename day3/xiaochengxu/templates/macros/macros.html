@@ -1,0 +1,55 @@
+
+{#这个方法 用于首页  两部分  上面 点一个下面电视剧   更多中 跳转到 电影电视剧详情页#}
+{% macro listGroup(title,items,category) %}
+    <div class="list-group">
+        <div class="group-top">
+{#            这里的title 表示 电影或者电视剧  #}
+            <span class="group-title">{{ title }}</span>
+{#            这里表示的是 更多   跳到  电影电视剧的列表页  传分类参数   也就是传1 或者2  #}
+            <a href="{{ url_for('item_list',category=category) }}" class="more-btn">更多</a>
+        </div>
+        <div class="any-group">
+{#        电影 电视剧 分别 取前三个 展示 #}
+            {% for item in items[0:3] %}
+{#                具体展示 调用下面的 展示方法  #}
+                {{ itemGroup(item,category) }}
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+
+{#这个方法是展示每个电影或者电视剧  缩略图 标题  星星及评分#}
+{% macro itemGroup(item,category) %}
+    <div class="item-group">
+        <a href="{{ url_for('detail',category=category,id=item.id) }}"><img class="thumbnail" src="{{ item.thumbnail }}" alt=""></a>
+        <p class="item-title">{{ item.title|truncate(6) }}</p>
+        {{ itemRating(item.rating) }}
+    </div>
+{% endmacro %}
+
+{#这个方法主要是根据评分 展示星星 #}
+{% macro itemRating(rating) %}
+    <p class="item-rating">
+        {% set lights = ((rating|int)/2)|int %}
+        {% set halfs = (rating|int)%2 %}
+        {% set grays = 5 - lights - halfs %}
+
+        {#渲染lights个高亮的星星#}
+        {% for light in range(0,lights) %}
+            <img src="{{ url_for('static',filename="image/rate_light.png") }}" alt="">
+        {% endfor %}
+
+        {#渲染lights个半高亮的星星#}
+        {% for half in range(0,halfs) %}
+            <img src="{{ url_for('static',filename="image/rate_half.jpg") }}" alt="">
+        {% endfor %}
+
+        {#渲染grays个灰 的星星#}
+        {% for gray in range(0,grays) %}
+            <img src="{{ url_for('static',filename="image/rate_gray.png") }}" alt="">
+        {% endfor %}
+
+        {{ rating }}
+    </p>
+{% endmacro %}

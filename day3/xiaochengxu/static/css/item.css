@@ -1,0 +1,22 @@
+.item-group{
+    width: 100px;
+    float: left;
+    margin-right: 8px;
+}
+.item-group .thumbnail{
+    width: 100%;
+    height: 140px;
+}
+.item-group .item-title{
+    text-align: center;
+    margin-top: 12px;
+}
+.item-group .item-rating{
+    color: #acacac;
+    text-align: center;
+    font-size: 12px;
+}
+.item-rating img{
+    width: 10px;
+    height: 10px;
+}

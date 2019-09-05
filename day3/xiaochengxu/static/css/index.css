@@ -1,0 +1,19 @@
+.list-group{
+    background: #fff;
+    padding: 17px 18px;
+}
+.list-group .group-top{
+    font-size: 18px;
+    overflow: hidden;
+}
+.group-top .group-title{
+    float: left;
+    color: #000;
+}
+.group-top .more-btn{
+    float: right;
+}
+.any-group{
+    margin-top: 20px;
+    overflow: hidden;
+}

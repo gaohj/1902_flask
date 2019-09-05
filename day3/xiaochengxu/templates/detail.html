@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% from 'macros/macros.html' import itemRating %}
+
+{% block head %}
+    <style>
+        .content{
+            padding: 20px 10px;
+        }
+        .title{
+            font-size: 20px;
+        }
+        .info-group{
+            overflow: hidden;
+        }
+        .info-group .left{
+            float: left;
+        }
+        .info-group .right{
+            float: right;
+        }
+        .right img{
+            width: 100px;
+            height: 140px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/item.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <p class="title">{{ item.title }}</p>
+        <div class="info-group">
+            <div class="left">
+                {{ itemRating(item.rating) }}
+                <div class="author">
+                    {{ item.authors }}
+                </div>
+            </div>
+            <div class="right">
+                <img src="{{ item.thumbnail }}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}
