@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d38dd6f8-5d32-4e15-8dc0-c18ecaf818b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/movie/movie_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/movie_static/movie_css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/movie_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/movie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inherit_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../inherit_demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d38dd6f8-5d32-4e15-8dc0-c18ecaf818b9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +204,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
