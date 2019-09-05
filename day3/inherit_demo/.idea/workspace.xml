@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="686ae486-0405-4c85-96cf-dd9f3cdc26de" name="Default Changelist" comment="" />
+    <list default="true" id="dbceadb1-e0cc-41d4-b752-9e90b7b5fea7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../static_demo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,42 +14,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="1054514839">
+    <session id="-1457502157">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="9" />
-          <entry key="html" value="161" />
-          <entry key="js" value="42" />
-          <entry key="py" value="82" />
+          <entry key="html" value="215" />
+          <entry key="py" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="9" />
-          <entry key="HTML" value="161" />
-          <entry key="JavaScript" value="42" />
-          <entry key="Python" value="82" />
+          <entry key="HTML" value="215" />
+          <entry key="Python" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="3" />
-          <entry key="js" value="1" />
+          <entry key="html" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="3" />
-          <entry key="JavaScript" value="1" />
+          <entry key="HTML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -54,53 +50,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="148">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/common/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="6" column="28" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../demo1/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="25" />
+            <state relative-caret-position="462">
+              <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="67" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../include_demo/templates/index/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            <state relative-caret-position="252">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding>
+                <element signature="e#146#169#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +87,6 @@
       <list>
         <option value="Flask Main" />
         <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -124,8 +97,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/css/index.css" />
-        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/templates/common/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
@@ -152,23 +124,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="static_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="static_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="inherit_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inherit_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="static_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="static_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="static_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="static_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="static_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="static_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="inherit_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inherit_demo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -180,8 +141,6 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../include_demo/templates/index/index.html" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -198,8 +157,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="static_demo" type="Python.FlaskServer" factoryName="Flask server">
-      <module name="static_demo" />
+    <configuration name="inherit_demo" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="inherit_demo" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,16 +178,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="686ae486-0405-4c85-96cf-dd9f3cdc26de" name="Default Changelist" comment="" />
-      <created>1567652911165</created>
+      <changelist id="dbceadb1-e0cc-41d4-b752-9e90b7b5fea7" name="Default Changelist" comment="" />
+      <created>1567653980995</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567652911165</updated>
+      <updated>1567653980995</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -262,43 +222,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="148">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+    <entry file="file://$PROJECT_DIR$/templates/common/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="462">
+          <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="6" column="28" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../demo1/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../include_demo/templates/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="22" selection-end-column="7" />
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#146#169#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
