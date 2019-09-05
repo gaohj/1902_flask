@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影列表</title>
+{#    这个到 默认的static 目录下面查找   #}
+{#    <link rel="stylesheet" href="{{ url_for("static",filename="movie_css.css") }}">#}
+{#    就到 movie 蓝本制定的  static_folder 下面查找   #}
+{#    这个movies 值得是 蓝本  Blueprint的第一个参数  #}
+    <link rel="stylesheet" href="{{ url_for("movies.static",filename="movie_css.css") }}">
+    <style>
+        body{
+            background: rebeccapurple;
+        }
+    </style>
+
+</head>
+<body>
+    电影列表
+</body>
+</html>

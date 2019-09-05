@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbceadb1-e0cc-41d4-b752-9e90b7b5fea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../blueprint_demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blueprint_demo/apps/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blueprint_demo/apps/movie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blueprint_demo/apps/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blueprint_demo/apps/movie/movie_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blueprint_demo/apps/movie_static/movie_css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blueprint_demo/templates/movie_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueprint_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blueprint_demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueprint_demo/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../blueprint_demo/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blueprint_demo/apps/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../blueprint_demo/apps/movie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +20,7 @@
     <session id="-1457502157">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
