@@ -1,0 +1,28 @@
+{% from 'macro/macros.html' import inputs as input_filed %}
+{#{% import "macro/macros.html" as macros%}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>1902扛把子集团系统登录</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>用户名:</td>
+{#                <td><input type="text" name="username" placeholder="请输入用户名"></td>#}
+{#                <td>{{ macros.inputs("username",placeholder="请输入用户名") }}</td>#}
+                <td>{{ input_filed("username",placeholder="请输入用户名") }}</td>
+                <td>密码:</td>
+                <td>{{ input_filed("password",placeholder="请输入密码",type="password") }}</td>
+{#                <td>{{ macros.inputs("password",placeholder="请输入密码",type="password") }}</td>#}
+                <td></td>
+                <td>{{ input_filed(value="提交",type="submit") }}</td>
+{#                <td>{{ macros.inputs(value="提交",type="submit") }}</td>#}
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

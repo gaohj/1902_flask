@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    {% autoescape true %}
+
+        {{ ps }}
+    {% endautoescape %}
+
+    <table border="1">
+        <tbody>
+            {% for x in range(1,10) %}
+            <tr>
+               {% for y in range(1,10) if y<=x %}
+                    <td>{{ y }} * {{ x }} = {{ x*y }}</td>
+               {% endfor %}
+
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+</body>
+</html>
