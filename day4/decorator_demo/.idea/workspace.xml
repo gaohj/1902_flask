@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ba6d8c2-2496-40fd-9c36-1c74598d96fa" name="Default Changelist" comment="" />
+    <list default="true" id="6cc55388-eac9-426a-9252-c2274b503f2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../class_view_func_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../class_view_func_demo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,36 +13,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1756315007">
+    <session id="2047981610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="139" />
-          <entry key="py" value="484" />
+          <entry key="html" value="14" />
+          <entry key="py" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="139" />
-          <entry key="Python" value="484" />
+          <entry key="HTML" value="14" />
+          <entry key="Python" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -48,12 +49,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="34" selection-start-line="34" selection-end-line="37" />
+            <state relative-caret-position="255">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
-                <marker date="1567736039902" expanded="true" signature="279:849" ph="..." />
-                <marker date="1567736039902" expanded="true" signature="331:367" ph="..." />
-                <marker date="1567736039902" expanded="true" signature="382:391" ph="..." />
+                <marker date="1567739225970" expanded="true" signature="120:370" ph="..." />
+                <marker date="1567739225970" expanded="true" signature="153:355" ph="..." />
+                <marker date="1567739225970" expanded="true" signature="631:764" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,10 +64,7 @@
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -110,23 +108,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="class_view_func_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class_view_func_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="decorator_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="class_view_func_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class_view_func_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="decorator_demo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,8 +146,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="class_view_func_demo" type="Python.FlaskServer" factoryName="Flask server">
-      <module name="class_view_func_demo" />
+    <configuration name="decorator_demo" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="decorator_demo" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,25 +167,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ba6d8c2-2496-40fd-9c36-1c74598d96fa" name="Default Changelist" comment="" />
-      <created>1567735129563</created>
+      <changelist id="6cc55388-eac9-426a-9252-c2274b503f2a" name="Default Changelist" comment="" />
+      <created>1567738284429</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567735129563</updated>
+      <updated>1567738284429</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -210,31 +209,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/jiangxiligong/test_36/Lib/site-packages/flask/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="34" selection-start-line="34" selection-end-line="37" />
+        <state relative-caret-position="255">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <marker date="1567736039902" expanded="true" signature="279:849" ph="..." />
-            <marker date="1567736039902" expanded="true" signature="331:367" ph="..." />
-            <marker date="1567736039902" expanded="true" signature="382:391" ph="..." />
+            <marker date="1567739225970" expanded="true" signature="120:370" ph="..." />
+            <marker date="1567739225970" expanded="true" signature="153:355" ph="..." />
+            <marker date="1567739225970" expanded="true" signature="631:764" ph="..." />
           </folding>
         </state>
       </provider>
