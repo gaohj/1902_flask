@@ -58,6 +58,17 @@ def search_data():
     person = session.query(User).first()
     print(person)
 
+def update_data():
+    u1 = session.query(User).first()
+    u1.name = 'qiongqiongxiaoxi'
+    session.commit()
+
+def delete_data():
+    u1 = session.query(User).first()
+    session.delete(u1)
+    session.commit()
 if __name__ == "__main__":
     # add_data()
-    search_data()
+    # search_data()
+    # update_data()
+    delete_data()

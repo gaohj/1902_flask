@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cbd149-c807-4e08-9ed1-519b003034d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,8 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sqlalchemy_demo1$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1567757315898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sqlalchemy_demo1$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1567758195734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sqlalchemy_demo1$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1567751736036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sqlalchemy_demo1$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1567759278059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sqlalchemy_demo1$demo4.coverage" NAME="demo4 Coverage Results" MODIFIED="1567761180175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-493235136">
@@ -25,22 +29,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1246" />
+          <entry key="py" value="2408" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1246" />
+          <entry key="Python" value="2408" />
         </counts>
       </usages-collector>
     </session>
@@ -50,22 +54,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
+            <state relative-caret-position="-319">
               <caret selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="-630">
+              <caret selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1567757212165" expanded="true" signature="1319:1324" ph="..." />
-                <marker date="1567757212165" expanded="true" signature="1625:1630" ph="..." />
-                <marker date="1567757212165" expanded="true" signature="1625:1823" ph="..." />
+                <marker date="1567758193284" expanded="true" signature="1319:1324" ph="..." />
+                <marker date="1567758193284" expanded="true" signature="1625:1630" ph="..." />
+                <marker date="1567758193284" expanded="true" signature="2025:2218" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <marker date="1567759278045" expanded="true" signature="804:809" ph="..." />
+                <marker date="1567759278045" expanded="true" signature="888:1210" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#119#0" expanded="true" />
+                <marker date="1567761178518" expanded="true" signature="819:1365" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,6 +121,8 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/demo1.py" />
         <option value="$PROJECT_DIR$/demo2.py" />
+        <option value="$PROJECT_DIR$/demo3.py" />
+        <option value="$PROJECT_DIR$/demo4.py" />
       </list>
     </option>
   </component>
@@ -99,7 +132,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="299" />
     <option name="y" value="83" />
     <option name="width" value="1219" />
@@ -142,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo2">
+  <component name="RunManager" selected="Python.demo4">
     <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sqlalchemy_demo1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,6 +220,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="demo3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sqlalchemy_demo1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sqlalchemy_demo1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sqlalchemy_demo1" type="Python.FlaskServer" factoryName="Flask server">
       <module name="sqlalchemy_demo1" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -206,9 +283,13 @@
       <item itemvalue="Flask server.sqlalchemy_demo1" />
       <item itemvalue="Python.demo1" />
       <item itemvalue="Python.demo2" />
+      <item itemvalue="Python.demo3" />
+      <item itemvalue="Python.demo4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demo4" />
+        <item itemvalue="Python.demo3" />
         <item itemvalue="Python.demo2" />
         <item itemvalue="Python.demo1" />
       </list>
@@ -232,7 +313,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -268,13 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/jiangxiligong/test_36/Lib/site-packages/sqlalchemy/ext/declarative/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7419">
@@ -284,13 +358,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="-630">
+          <caret selection-end-line="19" selection-end-column="47" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1567757212165" expanded="true" signature="1319:1324" ph="..." />
-            <marker date="1567757212165" expanded="true" signature="1625:1630" ph="..." />
-            <marker date="1567757212165" expanded="true" signature="1625:1823" ph="..." />
+            <marker date="1567758193284" expanded="true" signature="1319:1324" ph="..." />
+            <marker date="1567758193284" expanded="true" signature="1625:1630" ph="..." />
+            <marker date="1567758193284" expanded="true" signature="2025:2218" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1567759278045" expanded="true" signature="804:809" ph="..." />
+            <marker date="1567759278045" expanded="true" signature="888:1210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
+            <marker date="1567761178518" expanded="true" signature="819:1365" ph="..." />
           </folding>
         </state>
       </provider>
