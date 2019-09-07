@@ -82,7 +82,7 @@ article2 = Article(title="article4",content="kangbazi4")
 
 tag1 = Tag(name='tag3')
 tag2 = Tag(name='tag4')
-
+#如果将relationship 加到 article魔性上   就如下写法
 # article1.tags.append(tag1)
 # article1.tags.append(tag2)
 #
@@ -92,6 +92,7 @@ tag2 = Tag(name='tag4')
 # session.add(article1)
 # session.add(article2)
 
+#如果将relationship 加到 tag上   就如下写法
 tag1.articles.append(article1)
 tag1.articles.append(article2)
 
