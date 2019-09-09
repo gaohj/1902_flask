@@ -6,23 +6,45 @@
 </head>
 <body>
 <form action="" method="post">
+{#    <table>#}
+{#        <tbody>#}
+{#            <tr>#}
+{#                <td>用户名:</td>#}
+{#                <td><input type="text" name="username"></td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td>密码:</td>#}
+{#                <td><input type="password" name="password"></td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td>重复密码:</td>#}
+{#                <td><input type="password" name="password_repeat"></td>#}
+{#            </tr>#}
+{#             <tr>#}
+{#                <td></td>#}
+{#                <td><input type="submit" value="立即注册"/></td>#}
+{#            </tr>#}
+{#        </tbody>#}
+{#    </table>#}
+
     <table>
         <tbody>
             <tr>
-                <td>用户名:</td>
-                <td><input type="text" name="username"></td>
+                <td>{{ form.username.label }}</td>
+{#                如果你想给表单添加样式  直接传参即可#}
+                <td>{{ form.username(class="username") }}</td>
             </tr>
             <tr>
-                <td>密码:</td>
-                <td><input type="password" name="password"></td>
+                <td>{{ form.password.label }}</td>
+                <td>{{ form.password() }}</td>
             </tr>
             <tr>
-                <td>重复密码:</td>
-                <td><input type="password" name="password_repeat"></td>
+                <td>{{ form.password_repeat.label }}</td>
+                <td>{{ form.password_repeat() }}</td>
             </tr>
              <tr>
-                <td></td>
-                <td><input type="submit" value="立即注册"/></td>
+                <td>{{ form.submit.label }}</td>
+                <td>{{ form.submit() }}</td>
             </tr>
         </tbody>
     </table>
