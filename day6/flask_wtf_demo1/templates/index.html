@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+
+<form action="" method="post">
+    <table>
+        <tbody>
+{#            隐藏表单 用来存放  csrf_token  只要带着他过去  服务器就认为你是安全人选#}
+            {{ form.hidden_tag() }}
+            <tr>
+{#                用户名:<input type="text" name="name" class=username>#}
+                <td>{{ form.name.label }}</td>
+                <td>{{ form.name(class='username')}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{ form.submit()}}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+hello {% if name %}
+    {{ name }}
+{% endif %}
+</body>
+</html>
