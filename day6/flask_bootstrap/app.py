@@ -4,8 +4,12 @@ from wtforms import StringField,SubmitField,PasswordField
 from wtforms.validators import DataRequired
 from flask_bootstrap import Bootstrap
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = 'ADADSSDA12211ASDD'
+#在实例化 bootstrap 之前  设置  使用本地文件 不用 官网css.js
+#提高打开速度
+app.config['BOOTSTRAP_SERVE_LOCAL'] = True
+bootstrap = Bootstrap(app)
+
 
 
 class  LoginForm(FlaskForm):
