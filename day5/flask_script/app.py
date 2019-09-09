@@ -11,7 +11,8 @@ class Users(db.Model):
     username = db.Column(db.String(50),nullable=False)
     email = db.Column(db.String(50),nullable=False)
 
-db.create_all()
+db.create_all() #将这个改为命令行的方式
+
 
 
 

@@ -85,4 +85,4 @@ class Article(Base):
 
 user = session.query(User).first()
 print(user)
-print(user.extends)
+print(user.extends) #显示的学校的信息

@@ -54,7 +54,7 @@ class Article(Base):
     content = Column(Text,nullable=False)
 
     uid = Column(Integer,ForeignKey("user.id"))
-
+    # author = relationship("User",backref="articles")
     def __repr__(self):
         return "Article(title:%s,content:%s)" % (self.title,self.content)
 
@@ -70,6 +70,8 @@ class Article(Base):
 # session.commit()
 
 article = session.query(Article).first()
+# article.author = user
 uid = article.uid
 user = session.query(User).get(uid)
+article.author = user
 print(user)
