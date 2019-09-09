@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var times = 0;
+	function change(){
+		parent.document.getElementById("frameset1").rows = times++ % 2 == 0 ? "0%,10px,*" : "15%,10px,*";
+	}
+</script>
+</head>
+<body bgcolor="#dddddd" onclick="change()"  style="cursor: pointer; margin:0px;">
+<div style="width: 9999px; height: 9999px;"></div>
+
+
+</body>
+</html>

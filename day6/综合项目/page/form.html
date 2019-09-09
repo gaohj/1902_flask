@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>Insert title here</title>
+<style type="text/css">
+	input[type=text], input[type=password] {
+		width: 150px;
+		height: 15px;
+	}
+</style>
+</head>
+<body>
+	<fieldset style="width: 500px; margin: 0px auto;">
+		<b>注册新用户</b>
+		<form action="success.html" method="post" onsubmit="return checkAll();">
+			<table align="center" width="500" cellpadding="5">
+				<tr>
+					<td width="30%" align="right">账户:</td>
+					<td>
+						<input type="text" id="username" onblur="usernameCheck()">
+						<span id="usernameSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">密码:</td>
+					<td>
+						<input type="password" id="password" onblur="passwordCheck()">
+						<span id="passwordSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">确认密码:</td>
+					<td>
+						<input type="password" id="confirm" onblur="confirmCheck()">
+						<span id="confirmSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">手机号:</td>
+					<td>
+						<input type="text" id="email" onblur="emailCheck()">
+						<span id="emailSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">学历:</td>
+					<td>
+						<select id="city" onchange="cityCheck()">
+							<option value="">-请选择学历-</option>
+							<option value="bj">本科</option>
+							<option value="cd">研究生</option>
+							<option value="gz">博士</option>
+						</select>
+						<span id="citySpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">性别:</td>
+					<td>
+						<label><input type="radio" name="gender" value="male" onclick="genderCheck()"> 男 </label> 
+						<label><input type="radio" name="gender" value="female" onclick="genderCheck()"> 女 </label>
+						<span id="genderSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">兴趣:</td>
+					<td>
+						<label><input type="checkbox" name="interest" value="somke" onclick="interestCheck()"> 吃饭 </label> 
+						<label><input type="checkbox" name="interest" value="drink" onclick="interestCheck()"> 睡觉 </label> 
+						<label><input type="checkbox" name="interest" value="tangtou" onclick="interestCheck()"> 打豆豆 </label> 
+						<span id="interestSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><input type="submit" value="注册新用户"></td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+	<script type="text/javascript">
+	function usernameCheck() {
+		var value = trim(document.getElementById("username").value);
+		var span = document.getElementById("usernameSpan");
+		var regex = /^\w{1,10}$/;
+		var regex = /^1[3-9]\d{9}$/;
+		var msg = "";
+		if (!value)
+			msg = "账户必须填写";
+		else if (!regex.test(value))
+			msg = "账户格式不合法";
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		//alert(msg);
+		
+		return msg == "";
+	}
+	
+	function passwordCheck() {
+		var value = document.getElementById("password").value;
+		var span = document.getElementById("passwordSpan");
+		var regex = /^\w{6,16}$/;
+		var msg = "";
+		if (!value)
+			msg = "密码必须填写";
+		else if (!regex.test(value))
+			msg = "密码格式不合法";
+		span.innerHTML = msg;
+		//alert(msg);
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function confirmCheck() {
+		var password = document.getElementById("password").value;
+		var confirm = document.getElementById("confirm").value;
+		var span = document.getElementById("confirmSpan");
+		var msg = "";
+		if (password != confirm)
+			msg = "密码必须保持一致";
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function emailCheck() {
+		var value = document.getElementById("email").value;
+		var span = document.getElementById("emailSpan");
+		var regex = /^[\w-]+@([\w-]+\.)+[a-zA-Z]{2,3}$/;
+		var msg = "";
+		if (!value)
+			msg = "手机号必须填写";
+		else if (!regex.test(value))
+			msg = "手机号格式不合法";
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function cityCheck() {
+		var value = document.getElementById("city").value;
+		var span = document.getElementById("citySpan");
+		var msg = "";
+		if (!value)
+			msg = "学历必须选择";
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function genderCheck() {
+		var genderArr = document.getElementsByName("gender");		// 获取页面中所有name属性为指定值的元素
+		var span = document.getElementById("genderSpan");
+		var msg = "";
+		if (!genderArr[0].checked && !genderArr[1].checked) {
+			msg = "性别必须选择"
+		}
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function interestCheck() {
+		var interestArr = document.getElementsByName("interest");		// 获取页面中所有name属性为指定值的元素
+		var span = document.getElementById("interestSpan");
+		var msg = "";
+		if (!interestArr[0].checked && !interestArr[1].checked && !interestArr[2].checked) {
+			msg = "兴趣必须选择"
+		}
+		span.innerHTML = msg;
+		span.parentNode.parentNode.style.color = msg == "" ? "black" : "red";
+		return msg == "";
+	}
+	
+	function checkAll(){
+		var bUsername = usernameCheck();
+		var bPassword = passwordCheck();
+		var bConfirm = confirmCheck()
+		var bEmail = emailCheck()
+		var bCity = cityCheck();
+		var bGender = genderCheck();
+		var bInterest = interestCheck();
+		return bUsername && bPassword && bConfirm && bEmail && bCity && bGender && bInterest;
+	}
+	
+	function trim(s){
+		s = s.replace(/^\s+/, "");
+		s = s.replace(/\s+$/, "");
+		return s;
+	}
+</script>
+
+</body>
+</html>

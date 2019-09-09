@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// var regex = /^[abc]$/;		// 一个字符, a或b或c
+	// alert(regex.test("a"));		// 判断字符串中是否包含能匹配正则表达式的部分
+	
+	// 不加行开头和行末尾时, 用test方法, 只要包含就得到true
+	// 加上之后只有完全匹配时才true
+	
+	var s = "  ab c   ";
+	alert("-" + trim(s) + "-");
+	
+	function trim(s){
+		s = s.replace(/^\s+/, "");
+		s = s.replace(/\s+$/, "");
+		return s;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

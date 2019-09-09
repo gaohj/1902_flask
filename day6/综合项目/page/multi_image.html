@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+        <title>Insert title here</title>
+		<style type="text/css">
+			body > div > img {
+				position: absolute;
+				display: none;
+				z-index: -1;
+			}
+			
+			body > div > div > img {
+				width: 15px;
+				height: 15px;	
+				border: 1px solid;
+				cursor: pointer;
+			}
+		</style>
+		<script type="text/javascript">
+			onload = function(){
+				var id = setInterval(changeImage, 1000);		// 设置计时器, 每个1秒执行一次changeImage方法, 记住ID
+				
+				var div = document.getElementById("div");
+				div.onmouseover = function(){
+					clearInterval(id);							// 停止指定计时器
+				}
+				div.onmouseout = function(){
+					id = setInterval(changeImage, 1000);		// 再次开启计时器, 记住ID
+				}
+			}
+			
+			var times = 1;
+			function changeImage(){
+				var imgArr = document.images;					// 获取页面中所有img标签
+				for(var x = 0; x < 4; x++)						// 循环遍历
+					imgArr[x].style.display = "none";			// 隐藏每一个
+				imgArr[times++ % 4].style.display = "block";	// 显示其中一个
+			}
+			
+			function showImage(index){
+				var imgArr = document.images;
+				for(var x = 0; x < 4; x++)
+					imgArr[x].style.display = "none";
+				imgArr[index].style.display = "block";
+			}
+		</script>
+    </head>
+    <body>
+    	<div style="border:1px solid; width:320px; height:320px;" id="div">
+	    	<img src="../img/唐笑.jpg" style="display:block;">
+	    	<img src="../img/杜德伟.jpg">
+	    	<img src="../img/林俊杰.jpg">
+	    	<img src="../img/萧亚轩.jpg">
+			<div style="margin-left:210px; margin-top:290px;">
+				<img src="../img/1.JPG" onclick="showImage(0)">
+				<img src="../img/2.JPG" onclick="showImage(1)">
+				<img src="../img/3.JPG" onclick="showImage(2)">
+				<img src="../img/4.JPG" onclick="showImage(3)">
+			</div>
+		</div>
+    </body>
+</html>

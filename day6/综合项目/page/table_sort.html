@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>Untitled Document</title>
+		<script type="text/javascript">
+			var ageTimes = 0;
+			var nameTimes = 0;
+			var emialTimes = 0;
+			
+			
+			function sortByAge(){
+				// 获取TBODY下的所有TR
+				var tbody = document.getElementsByTagName("tbody")[0];
+				var arr = tbody.rows;
+				
+				// 排序
+				for(var i = 0; i < arr.length - 1; i++) {
+					for(var j = 0; j < arr.length - 1 - i; j++) {
+						if(ageTimes % 2 == 0 		// 根据次数的奇偶来决定正序还是倒序
+						   ? parseInt(arr[j].cells[1].innerHTML) > parseInt(arr[j+1].cells[1].innerHTML)
+						   : parseInt(arr[j].cells[1].innerHTML) < parseInt(arr[j+1].cells[1].innerHTML)) {
+							swap(arr[j], arr[j+1]);
+						}
+					}
+				}
+				
+				// 次数+1
+				ageTimes++;
+			}
+			
+			function sortByName(){
+				// 获取TBODY下的所有TR
+				var tbody = document.getElementsByTagName("tbody")[0];
+				var arr = tbody.rows;
+				
+				// 排序
+				for(var i = 0; i < arr.length - 1; i++) {
+					for(var j = 0; j < arr.length - 1 - i; j++) {
+						if(nameTimes % 2 == 0 		// 根据次数的奇偶来决定正序还是倒序
+						   ? arr[j].cells[0].innerHTML > arr[j+1].cells[0].innerHTML
+						   : arr[j].cells[0].innerHTML < arr[j+1].cells[0].innerHTML) {
+							swap(arr[j], arr[j+1]);
+						}
+					}
+				}
+				
+				// 次数+1
+				nameTimes++;
+			}
+			
+			function sortByEmail(){
+				// 获取TBODY下的所有TR
+				var tbody = document.getElementsByTagName("tbody")[0];
+				var arr = tbody.rows;
+				
+				// 排序
+				for(var i = 0; i < arr.length - 1; i++) {
+					for(var j = 0; j < arr.length - 1 - i; j++) {
+						if(emialTimes % 2 == 0 		// 根据次数的奇偶来决定正序还是倒序
+						   ? arr[j].cells[2].innerHTML > arr[j+1].cells[2].innerHTML
+						   : arr[j].cells[2].innerHTML < arr[j+1].cells[2].innerHTML) {
+							swap(arr[j], arr[j+1]);
+						}
+					}
+				}
+				
+				// 次数+1
+				emialTimes++;
+			}
+			
+			
+			function swap(x, y){
+				var temp = x.cloneNode(true);
+				y.parentNode.replaceChild(temp, y);
+				x.parentNode.replaceChild(y, x);
+				temp.parentNode.replaceChild(x, temp);
+			}
+		</script>
+	</head>
+	<body>
+		<table width="60%" border="1" cellspacing="0" cellpadding="5" align="center">
+			<thead>
+				<tr>
+			        <th><a href="javascript:sortByName()">姓名</a></th>
+			        <th><a href="javascript:sortByAge()">年龄</a></th>
+			        <th><a href="javascript:sortByEmail()">邮箱</a></th>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+			        <td>cc</td>
+			        <td>27</td>
+			        <td>cc@gmail.com</td>
+			    </tr>
+			    <tr>
+			        <td>ff</td>
+			        <td>18</td>
+			        <td>ff@163.com</td>
+			    </tr>
+			    <tr>
+			        <td>ee</td>
+			        <td>18</td>
+			        <td>ee@sina.com.cn</td>
+			    </tr>
+			    <tr>
+			        <td>dd</td>
+			        <td>8</td>
+			        <td>dd@qq.com</td>
+			    </tr>
+			    <tr>
+			        <td>aa</td>
+			        <td>22</td>
+			        <td>aa@hotmail.com</td>
+			    </tr>
+			</tbody>
+		</table>
+	</body>
+</html>

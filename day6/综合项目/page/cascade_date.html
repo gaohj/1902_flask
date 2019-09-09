@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>级联日期</title>
+		<script type="text/javascript">
+			onload = function(){
+				// 获取3个Select对象
+				var yearSelect = document.getElementById("yearSelect");
+				var monthSelect = document.getElementById("monthSelect");
+				var dateSelect = document.getElementById("dateSelect");
+				
+				// 循环12次, 创建12个option, 添加到monthSelect
+				for(var x = 1; x <= 12; x++){
+					var option = document.createElement("option");		// 创建option元素
+					option.value = x;
+					option.innerHTML = x;
+					monthSelect.appendChild(option);					// 添加到monthSelect中
+				}
+				
+				// 从当前年份开始循环150次, 每次创建一个option, 添加到yearSelect
+				var date = new Date();
+				for(var x = date.getFullYear(); x >= date.getFullYear() - 150; x--) {
+					var option = document.createElement("option");		
+					option.value = x;
+					option.innerHTML = x;
+					yearSelect.appendChild(option);
+				}
+				
+				// 当年份和月份改变的时候, 都需要生成日期
+				yearSelect.onchange = generateDate;
+				monthSelect.onchange = generateDate;
+				
+				function generateDate(){
+					// 删除原有的option
+					var optionArr = dateSelect.options;
+					for(var x = 1; x < optionArr.length; x++)
+						dateSelect.removeChild(optionArr[x--]);
+					
+					// 获取选中的年份和月份
+					var year = yearSelect.value;
+					var month = monthSelect.value;
+					
+					// 如果年没选或者月没选, 不生成日期
+					if(year == "" || month == "")
+						return;
+					
+					// 根绝年份和月份判断当前月有多少天
+					var days = 0;
+					if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+						days = 31;
+					else if (month == 2)
+						days = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ? 29 : 28;	
+					else
+						days = 30;
+					
+					// 生成option, 添加到dateSelect
+					for(var x = 1; x <= days; x++) {
+						var option = document.createElement("option");		
+						option.value = x;
+						option.innerHTML = x;
+						dateSelect.appendChild(option);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<select id="yearSelect"><option value="">-请选择年份-</option></select>
+		<select id="monthSelect"><option value="">-请选择月份-</option></select>
+		<select id="dateSelect"><option value="">-请选择日期-</option></select>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>Untitled Document</title>
+		<style type="text/css">
+			input[type=text] {
+				width: 30px;
+			}
+		</style>
+		<script type="text/javascript">
+			function create(){
+				// 获取页面上已有的TABL, 删除
+				var oldTable = document.getElementsByTagName("table")[0];
+				if(oldTable != null)
+					oldTable.parentNode.removeChild(oldTable);
+				
+				// 获取要创建的行数和列数
+				var rows = document.getElementById("createRows").value;
+				var cols = document.getElementById("createCols").value;
+				document.getElementById("createRows").value = "";
+				document.getElementById("createCols").value = "";
+				
+				if(rows == "" || cols == "")
+					return;
+				
+				// 创建TABLE, 设置属性, 添加到BODY中
+				var table = document.createElement("table");
+				table.setAttribute("border", "1");
+				table.setAttribute("align", "center");
+				table.setAttribute("width", "600");
+				table.setAttribute("cellpadding", "5");
+				table.setAttribute("cellspacing", "0");
+				document.body.appendChild(table);
+				
+				// 创建TBODY, 添加到TABLE中
+				var tbody = document.createElement("tbody");
+				table.appendChild(tbody);
+				
+				// 创建若干个TR, 添加到TBODY中
+				for(var x = 1; x <= rows; x++) {
+					var tr = document.createElement("tr");
+					tbody.appendChild(tr);
+					
+					// 创建若干个TD, 添加到TR中
+					for(var y = 1; y <= cols; y++) {
+						var td = document.createElement("td");
+						td.innerHTML = x + ", " + y;
+						tr.appendChild(td);
+					}
+				}
+			}
+			
+			function deleteRow(){
+				// 获取要删除的行号
+				var rows = document.getElementById("deleteRows").value;
+				document.getElementById("deleteRows").value = "";
+				
+				// 获取要删除的TR
+				var tr = document.getElementsByTagName("tr")[rows - 1];
+				if (tr == null) {
+					alert("要删除的行不存在!");
+					return;
+				}
+				
+				// 删除tr
+				tr.parentNode.removeChild(tr);
+			}
+			
+			function deleteCol(){
+				// 获取要删除的列号
+				var cols = document.getElementById("deleteCols").value;
+				document.getElementById("deleteCols").value = "";
+				
+				// 获取所有的TR, 循环遍历
+				var trArr = document.getElementsByTagName("tr");
+				for(var x = 0; x < trArr.length; x++) {
+					// 获取每一个TR中要删除的TD, 删除
+					var td = trArr[x].cells[cols - 1];	
+					if (td == null) {
+						alert("要删除的列不存在!");
+						return;
+					}	
+					td.parentNode.removeChild(td);
+				}
+			}
+			
+			function swapRow(){
+				// 获取要交换的两个行号
+				var rows1 = document.getElementById("rows1").value;
+				var rows2 = document.getElementById("rows2").value;
+				document.getElementById("rows1").value = "";
+				document.getElementById("rows2").value = "";
+				
+				// 获取要交换的两个TR
+				var trArr = document.getElementsByTagName("tr");
+				var tr1 = trArr[rows1 - 1];
+				var tr2 = trArr[rows2 - 1];
+				
+				// 交换两个TR
+				// tr1.swapNode(tr2);
+				swap(tr1, tr2);
+			}
+			
+			function swapCol(){
+				// 获取要交换的两个列号
+				var cols1 = document.getElementById("cols1").value;
+				var cols2 = document.getElementById("cols2").value;
+				document.getElementById("cols1").value = "";
+				document.getElementById("cols2").value = "";
+				
+				// 获取所有的TR, 循环遍历
+				var trArr = document.getElementsByTagName("tr");
+				for(var x = 0; x < trArr.length; x++) {
+					// 获取要交换的两个TD
+					var td1 = trArr[x].cells[cols1 - 1];
+					var td2 = trArr[x].cells[cols2 - 1];
+					
+					// 交换两个TD
+					// td1.swapNode(td2);
+					swap(td1, td2);
+				}
+			}
+			
+			function swap(x, y){
+				var temp = x.cloneNode(true);
+				y.parentNode.replaceChild(temp, y);
+				x.parentNode.replaceChild(y, x);
+				temp.parentNode.replaceChild(x, temp);
+			}
+		</script>
+	</head>
+	<body>
+		创建的行数: <input type="text" id="createRows"><br>
+		创建的列数: <input type="text" id="createCols"><br>
+		<input type="button" value="创建表格" onclick="create()"><br>
+		<br>
+		要删除的行: <input type="text" id="deleteRows"><input type="button" value="删除行" onclick="deleteRow()"><br>
+		要删除的行: <input type="text" id="deleteCols"><input type="button" value="删除列" onclick="deleteCol()"><br>
+		<br>
+		要交换的行: <input type="text" id="rows1">, <input type="text" id="rows2"><input type="button" value="交换行" onclick="swapRow()"><br>
+		要交换的列: <input type="text" id="cols1">, <input type="text" id="cols2"><input type="button" value="交换列" onclick="swapCol()"><br>
+		<br>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>Untitled Document</title>
+		<script type="text/javascript">
+			onload = function(){
+				var trArr = document.getElementsByTagName("tr");
+				trArr[0].style.background = "#666666";
+				trArr[trArr.length - 1].style.background = "#666666";
+				formatColor();	
+			}		
+			function formatColor(){
+				var tbody = document.getElementsByTagName("tbody")[0];
+				var trArr = tbody.rows;
+				for(var x = 0; x < trArr.length; x++)
+					trArr[x].style.background = x % 2 == 0 ? "#dddddd" : "#bbbbbb";
+			}	
+			function changeAll(obj){
+				var cbArr = document.getElementsByName("cb");
+				for(var x = 0; x < cbArr.length; x++)
+					cbArr[x].checked = obj.checked;
+			}	
+			function selectAll(){
+				var cbArr = document.getElementsByName("cb");
+				for(var x = 0; x < cbArr.length; x++)
+					cbArr[x].checked = true;
+			}
+			function cancelAll(){
+				var cbArr = document.getElementsByName("cb");
+				for(var x = 0; x < cbArr.length; x++)
+					cbArr[x].checked = false;
+			}
+			function reverseAll(){
+				var cbArr = document.getElementsByName("cb");
+				for(var x = 0; x < cbArr.length; x++)
+					cbArr[x].checked = !cbArr[x].checked;
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center" width="70%" border="1" cellpadding="5" cellspacing="0" id="table">
+			<thead>
+				<tr>
+		            <th width="10%"><input id="first" type="checkbox" onclick="changeAll(this)"></th>
+		            <th>标题</th>
+		            <th>发件人</th>
+		            <th>时间</th>
+		        </tr>
+			</thead>
+			<tbody>
+				<tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title1</td>
+		            <td>赵一伤</td>
+		            <td>2014-6-1</td>
+		        </tr>
+		        <tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title2</td>
+		            <td>田二败</td>
+		            <td>2014-5-5</td>
+		        </tr>
+		        <tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title3</td>
+		            <td>孙三毁</td>
+		            <td>2014-1-8</td>
+		        </tr>
+		        <tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title4</td>
+		            <td>李四摧</td>
+		            <td>2014-1-15</td>
+		        </tr>
+		        <tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title5</td>
+		            <td>周五轮</td>
+		            <td>2010-1-2</td>
+		        </tr>
+				<tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title6</td>
+		            <td>吴六破</td>
+		            <td>2014-10-2</td>
+		        </tr>
+				<tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title7</td>
+		            <td>郑七灭</td>
+		            <td>2014-9-2</td>
+		        </tr>
+				<tr>
+		            <td align="center"><input type="checkbox" name="cb"></td>
+		            <td>Title8</td>
+		            <td>王八衰</td>
+		            <td>2014-11-2</td>
+		        </tr>
+			</tbody>
+			<tfoot>
+				<tr>
+		        	<th colspan="4">
+		        		<input type="button" value="全选" onclick="selectAll()">
+						<input type="button" value="反选" onclick="reverseAll()">
+		        		<input type="button" value="取消" onclick="cancelAll()">
+					</th>
+		        </tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

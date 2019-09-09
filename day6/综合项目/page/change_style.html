@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+        <title>Insert title here</title>
+		<style type="text/css">
+			input[type=button] {
+				width: 200px;
+			}
+		</style>
+		<script type="text/javascript">
+			onload = function(){											// 由于需要获取页面元素, 必须等待页面加载结束之后才获取
+				var red = document.getElementById("red");					// 根据ID获取页面中的额元素
+				var green = document.getElementById("green");
+				var blue = document.getElementById("blue");
+				
+				red.onclick = click;			// 处理按钮的点击事件
+				green.onclick = click;
+				blue.onclick = click;
+				
+				red.onmouseover = over;			// 处理按钮的鼠标进入事件
+				green.onmouseover = over;
+				blue.onmouseover = over;
+				
+				red.onmouseout = out;			// 处理按钮的鼠标移出事件
+				green.onmouseout = out;
+				blue.onmouseout = out;
+				
+				var color = "white";			// 背景颜色, 默认是白色
+				
+				function click(){				// 按钮被点击时, color记住的颜色改为按钮的颜色
+					color = this.style.background;
+				}
+				
+				function over(){				// 鼠标进入时, 背景颜色改为按钮颜色
+					document.body.style.background = this.style.background;
+				}
+				
+				function out(){					// 鼠标移出时, 背景颜色改为color记住的颜色
+					document.body.style.background = color;
+				}
+			}
+		</script>
+    </head>
+    <body>
+    	<center>
+	    	<input type="button" value="中国红" style="background:#FF0000;" id="red">
+	    	<input type="button" value="绿野仙踪" style="background:#00FF00;" id="green">
+	    	<input type="button" value="蓝色妖姬" style="background:#0000FF;" id="blue">
+		</center>
+    </body>
+</html>

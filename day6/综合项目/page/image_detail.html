@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+        <title>Insert title here</title>
+		<script type="text/javascript">
+			onload = function(){
+				var sImg = document.getElementById("sImg");
+				var bImg = document.getElementById("bImg");
+				var div = document.getElementById("div1");
+				
+				sImg.onmousemove = function(){
+					var e = arguments[0] == undefined ? event : arguments[0];
+					var x = e.clientX - 8;					// 鼠标在小图上右移了多少像素
+					var y = e.clientY - 8;					// 鼠标在小图上下移了多少像素
+					bImg.style.marginLeft = -x * 2 + "px";		// 鼠标在小图上右移了多少像素, 就在大图上左移该像素数成2
+					bImg.style.marginTop = -y * 2 + "px";		// 鼠标在小图上下移了多少像素, 就在大图上上移该像素数成2
+				}
+				
+				sImg.onmouseover = function(){					// 鼠标进入小图时, DIV显示
+					div.style.display = "block";
+				}
+				
+				sImg.onmouseout = function(){					// 鼠标移出小图时, DIV隐藏
+					div.style.display = "none";
+				}
+			}
+			
+			
+		</script>
+    </head>
+    <body>
+    	<img src="萧亚轩.jpg" id="sImg" >
+	<div id="div1">
+		<img src="萧亚轩.jpg" id="bImg" >
+	</div>
+    </body>
+	
+	<script type="text/javascript">
+	
+			
+			</script>
+</html>

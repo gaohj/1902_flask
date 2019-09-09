@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+        <title>Insert title here</title>
+		<script type="text/javascript">
+			onload = function(){
+				var ad = document.getElementById("ad");
+				var width = document.documentElement.clientWidth;		// 窗口宽度
+				var height = document.documentElement.clientHeight;		// 窗口高度
+				
+				var id = setInterval(move, 20);
+				ad.onmouseover = function(){
+					clearInterval(id);
+				}
+				ad.onmouseout = function(){
+					id = setInterval(move, 20);
+				}
+				ad.onclick = function(){
+					ad.style.display = "none";
+					open("multi_image.html", "_blank", "height=336,width=336,status=no,toolbar=no,menubar=no,location=no");
+				}
+				
+				
+				var x = 0;
+				var y = 1;
+				var xStep = 3;
+				var yStep = 3;
+				function move(){
+					x += xStep;
+					y += yStep;
+					
+					if(y + ad.height > height || y < 0)
+						yStep *= -1;
+					if(x + ad.width > width || x < 0)
+						xStep *= -1;
+					
+					ad.style.left = x + "px"; 
+					ad.style.top = y + "px";
+				}
+			}
+		</script>
+    </head>
+    <body>
+    	<img src="../img/ad.png" style="position:absolute; width:50px; " id="ad">
+    </body>
+</html>

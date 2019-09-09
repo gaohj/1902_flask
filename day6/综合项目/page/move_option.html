@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>Untitled Document</title>
+		<style type="text/css">
+			select {
+				width: 200px;
+				height:350px;
+			}
+			input {
+				position: absolute;
+				width: 100px;
+				margin-left: -150px;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			var leftSelect;
+			var rightSelect;
+			onload = function(){
+				leftSelect = document.getElementById("leftSelect");
+				rightSelect = document.getElementById("rightSelect");
+			}
+			
+			function right(){
+				var optionArr = leftSelect.options;					// 获取左边的所有option
+				for(var x = 0; x < optionArr.length; x++)			// 循环遍历
+					if(optionArr[x].selected)						// 如果哪一个被选中了
+						rightSelect.appendChild(optionArr[x--]);	// 移动到右边
+			}
+			
+			function left(){
+				var optionArr = rightSelect.options;				// 获取右边的所有option
+				for(var x = 0; x < optionArr.length; x++)			// 循环遍历
+					if(optionArr[x].selected)						// 如果哪一个被选中了
+						leftSelect.appendChild(optionArr[x--]);		// 移动到左边
+			}
+			
+			function up(){
+				var optionArr = leftSelect.options;
+				for (var x = 0; x < optionArr.length; x++) 
+					if (optionArr[x].selected) {
+						if(x == 0)									// 如果被选中的是第一个
+							return;									// 方法结束
+						swap(optionArr[x], optionArr[x - 1]);		// 将被选中的和上面一个交换
+					}
+					
+				optionArr = rightSelect.options;
+				for (var x = 0; x < optionArr.length; x++) 
+					if (optionArr[x].selected) {
+						if(x == 0)									// 如果被选中的是第一个
+							return;									// 方法结束
+						swap(optionArr[x], optionArr[x - 1]);		// 将被选中的和上面一个交换
+					}
+			}
+			
+			function down(){
+				var optionArr = leftSelect.options;
+				for (var x = optionArr.length - 1; x >= 0 ; x--) 
+					if (optionArr[x].selected) {
+						if(x == optionArr.length - 1)
+							return;
+						swap(optionArr[x], optionArr[x + 1]);
+					}
+					
+				optionArr = rightSelect.options;
+				for (var x = optionArr.length - 1; x >= 0 ; x--) 
+					if (optionArr[x].selected) {
+						if(x == optionArr.length - 1)
+							return;
+						swap(optionArr[x], optionArr[x + 1]);
+					}
+			}
+			
+			function cancelLeft(){
+				var optionArr = leftSelect.options;
+				for (var x = 0; x < optionArr.length; x++) 
+					optionArr[x].selected = false;					// 将每一个option都取消选中
+			}
+			
+			function cancelRight(){
+				var optionArr = rightSelect.options;
+				for (var x = 0; x < optionArr.length; x++) 
+					optionArr[x].selected = false;					// 将每一个option都取消选中
+			}
+			
+			function swap(x, y){
+				var temp = x.cloneNode(true);
+				y.parentNode.replaceChild(temp, y);
+				x.parentNode.replaceChild(y, x);
+				temp.parentNode.replaceChild(x, temp);
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<fieldset style="width:800px;">
+				<legend>请选择课程</legend>
+				<br>
+				<select id="leftSelect" multiple="multiple" size="23" style="margin-right:200px;" ondblclick="right();" onclick="cancelRight();">
+					<option>职场新动力英语1</option>
+					<option>职场新动力英语2</option>
+					<option>职场新动力英语3</option>
+					<option>职场新动力数学1</option>
+					<option>职场新动力数学2</option>
+					<option>职场新动力数学3</option>
+					<option>计算机基础</option>
+					<option>网页设计</option>
+					<option>C语言程序设计</option>
+					<option>CoreJava</option>
+					<option>JavaWeb编程</option>
+					<option>RIA应用</option>
+					<option>Java高级/CMS案例</option>
+					<option>数据结构与算法</option>
+					<option>Struts/hibernate/Mybatis</option>
+					<option>springMVC/SSH/WebService</option>
+					<option>项目实训1</option>
+					<option>项目实训2</option>
+					<option>项目实训3</option
+				</select>
+				<input type="button" value="→ 添加 →" style="margin-top:50px;" onclick="right();">
+				<input type="button" value="← 删除 ←" style="margin-top:100px;" onclick="left();">
+		
+				<select id="rightSelect" multiple="multiple" size="23"  ondblclick="left();" onclick="cancelLeft();">
+				</select>
+				<br>
+				<br>
+			</fieldset>
+		</center>
+	</body>
+</html>

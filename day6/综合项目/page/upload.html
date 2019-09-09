@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>Untitled Document</title>
+		<script type="text/javascript">
+			var div;
+			onload = function(){
+				div = document.getElementById("div");		// 获取div
+			}
+			
+			function add(obj){
+				var cloneDiv = div.cloneNode(true);				// 克隆div
+				obj.parentNode.insertBefore(cloneDiv, obj);		// 插入到按钮的前面
+			}
+			
+			function del(obj){
+				obj.parentNode.parentNode.removeChild(obj.parentNode);	// 获取图片的爷爷, 删除他爹
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<fieldset style="width:400px;">
+				<legend>上传附件</legend>
+				<div id="div">
+					<input type="file"><img src="../img/x.gif" style="width:12px; cursor:pointer;" onclick="del(this)">
+				</div>
+				<input type="button" value="添加新按钮" onclick="add(this)">
+			</fieldset>
+		</center>
+	</body>
+</html>
