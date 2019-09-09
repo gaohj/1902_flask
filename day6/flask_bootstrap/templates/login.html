@@ -1,0 +1,15 @@
+{#因为我们已经安装好了 flask_bootstrap #}
+{#你的虚拟环境位置\Lib\site-packages\flask_bootstrap\templates\bootstrap#}
+{% extends 'bootstrap/base.html' %}
+
+
+{#导入渲染工具 也就是导入宏  #}
+
+{% import 'bootstrap/wtf.html' as wtf %}
+
+
+{% block content %}
+    {{ wtf.quick_form(form,action="",method="post") }}
+
+{%endblock%}
+

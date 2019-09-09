@@ -13,8 +13,10 @@
             {{ form.hidden_tag() }}
             <tr>
 {#                用户名:<input type="text" name="name" class=username>#}
-                <td>{{ form.name.label }}</td>
-                <td>{{ form.name(class='username')}}</td>
+{#                <td>用户名:</td>#}
+{#                <td><input type="text" name="name" class="username"></td>#}
+                <td>{{ form.username.label }}</td>
+                <td>{{ form.username(class="username") }}</td>
             </tr>
             <tr>
                 <td></td>

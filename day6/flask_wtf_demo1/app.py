@@ -24,11 +24,20 @@ def register():
     name = None
     form = RegisterForm()
     if form.validate_on_submit(): #判断用户的输入是否符合要求
-        name = form.name.data #接收表单提交的内容
+        name = form.username.data #接收表单提交的内容
         print(name)
-        form.name.data = '' #提交之后 将输入框清空
+        form.username.data = '' #提交之后 将输入框清空
     return render_template('index.html',form=form,name=name)
 
+@app.route('/login/',methods=['POST','GET'])
+def login():
+    name = None
+    form = RegisterForm()
+    if form.validate_on_submit(): #判断用户的输入是否符合要求
+        name = form.username.data #接收表单提交的内容
+        print(name)
+        form.username.data = '' #提交之后 将输入框清空
+    return render_template('login.html',form=form,name=name)
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)
