@@ -1,6 +1,7 @@
 from flask import Flask,request,render_template
 from forms import RegisterForm,LoginForm
 from flask_bootstrap import Bootstrap
+from wtforms.validators import ValidationError
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '123ADFASD112'
 app.config['BOOTSTRAP_SERVE_LOCAL']=True
@@ -21,7 +22,7 @@ def register():
         # request.form 接收表单过来的
         # request.file
         form = RegisterForm(request.form) # 表单提交多来的内容作为 参数
-        if form.validate(): #如果用户的输入 满足要求
+        if form.validate_on_submit(): #如果用户的输入 满足要求
             return 'success'
         else:
             print(form.errors)  #打印表单错误消息

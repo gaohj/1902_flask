@@ -2,7 +2,7 @@ from wtforms import Form,StringField,PasswordField,SubmitField,IntegerField,Bool
 from wtforms.validators import Length,EqualTo,Email,InputRequired,NumberRange,Regexp,URL,UUID
 from flask_wtf import FlaskForm
 from wtforms import ValidationError
-class RegisterForm(Form):
+class RegisterForm(FlaskForm):
     username = StringField("用户名",validators=[Length(min=6,max=20,message="用户名长度在6-20位")])
     password = PasswordField("密码",validators=[Length(min=6,max=20,message="密码长度在6-20位")])
     password_repeat =  PasswordField("确认密码",validators=[Length(min=6,max=20,message="密码长度在6-20位"),EqualTo("password",message="两次密码必须一致")])
@@ -11,7 +11,7 @@ class RegisterForm(Form):
 #FlaskForm 继承于 Form
 #如果你想用 flask_bootstrap渲染 那么必须继承于 FlaskForm
 #如果使用 {{form.email.label}}{{form.email()}} 那么继承于 Form即可
-class LoginForm(FlaskForm):
+class LoginForm(Form):
     email = StringField("邮箱",validators=[Email(message="必须是邮箱类型")])
     username = StringField("用户名", validators=[Length(min=6, max=20, message="用户名长度在6-20位"),InputRequired("请填写用户名")])
     age = IntegerField(validators=[NumberRange(18,90)])

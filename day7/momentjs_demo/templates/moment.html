@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moment</title>
+</head>
+<body>
+<div>
+{#    原样输出#}
+    <div>{{ public_time }}</div>
+{#    简单格式化显示  #}
+    <div>{{ moment(public_time).format('LLLL') }}</div>
+    <div>{{ moment(public_time).format('LLL') }}</div>
+    <div>{{ moment(public_time).format('LL') }}</div>
+    <div>{{ moment(public_time).format('L') }}</div>
+{#    自定义格式  #}
+    <div>{{ moment(public_time).format('YYYY/MM/DD hh:mm:ss') }}</div>
+{#    自定义时间差值#}
+    <div>{{ moment(public_time).fromNow() }}</div>
+</div>
+
+
+{# moment.js依赖于 jquery  所以先将其加载过来 #}
+{{ moment.include_jquery() }}
+
+{# 加载moment.js#}
+{{ moment.include_moment() }}
+
+{{ moment.locale('zh-CN') }}
+</body>
+</html>
