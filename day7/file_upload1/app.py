@@ -7,7 +7,8 @@ app = Flask(__name__)
 #设置允许的后缀
 ALLOWED_EXTENSIONS = set(['png','jpg','jpeg','gif'])
 #设置保存的位置
-app.config['UPLOAD_FOLDER'] = os.getcwd()
+# app.config['UPLOAD_FOLDER'] = os.getcwd()
+app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__),'images')
 #设置上传文件的大小
 app.config['MAX_CONTENT_LENGTH'] = 8 * 1024 * 1024
 manager = Manager(app)
