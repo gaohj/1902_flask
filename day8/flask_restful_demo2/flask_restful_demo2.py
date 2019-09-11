@@ -3,11 +3,12 @@ import config
 from ext import db
 from flask_restful import Api,Resource,fields,marshal_with
 from models import User,Article,Tag
+from articleviews import article_bp
 app = Flask(__name__)
 api = Api(app)
 app.config.from_object(config)
 db.init_app(app)
-
+app.register_blueprint(article_bp)
 # class Article(object):
 #     def __init__(self,name,age,school=None):
 #         self.name = name
