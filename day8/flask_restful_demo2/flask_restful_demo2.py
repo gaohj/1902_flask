@@ -7,6 +7,7 @@ from articleviews import article_bp
 app = Flask(__name__)
 api = Api(app)
 app.config.from_object(config)
+app.config['SECRET_KEY'] = 'abc123456'
 db.init_app(app)
 app.register_blueprint(article_bp)
 # class Article(object):

@@ -1,15 +1,15 @@
-from flask import Blueprint,render_template,make_response,Response
+from flask import Blueprint,render_template,make_response,Response,session,request
 from flask_restful import Api,Resource,fields,marshal_with
 from models import Article
+from werkzeug.local import LocalProxy
 import json
 article_bp = Blueprint('article',__name__,url_prefix='/article')
-
 api = Api(article_bp)
 # 这个方法 用来 在浏览器显示的字符串按照  html的方式 显示
 #如果没有这一步  那么显示的就是字符串
 #如果 想以页面的形式返回  那么使用representation来定义一个函数
 #在这个函数中 封装一个方法  支持返回 页面 和 json
-#这个方式支持返回 html和  json  
+#这个方式支持返回 html和  json
 @api.representation('text/html')
 def out_html(data,code,headers):
     #如果是字符串  那么就以页面的形式展示
@@ -54,3 +54,10 @@ class AboutView(Resource):
     def get(self):
         return render_template('index.html')
 api.add_resource(AboutView,'/about/',endpoint="about")
+
+@article_bp.route('/se/')
+def se():
+    session['user_id'] = 666
+    print(type(session))
+    print(type(request))
+    return 'session'
