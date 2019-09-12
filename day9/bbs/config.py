@@ -2,6 +2,8 @@
 import os
 SECRET_KEY = os.urandom(24)
 
+
+
 HOSTNAME = '127.0.0.1'
 PORT = '3306'
 DATABASE = '1902bbs'
@@ -13,3 +15,5 @@ DB_UI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8".
 
 SQLALCHEMY_DATABASE_URI = DB_UI
 SQLALCHEMY_TRACK_MODIFICATIONS= False
+
+CMS_USER_ID = 'ASDFSADFDSFSDFSDF'
