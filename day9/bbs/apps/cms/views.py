@@ -4,4 +4,4 @@ bp = Blueprint("cms",__name__,url_prefix='/cms')
 
 @bp.route('/')
 def index():
-    return render_template('cms/index.html')
+    return render_template('cms/cms_index.html')
