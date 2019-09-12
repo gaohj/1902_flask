@@ -5,16 +5,30 @@ from flask import(
     request,
     session,
     redirect,
-    url_for
+    url_for,
+    g
 )
 import config
 from .forms import LoginForm
 from .models import CMSUser
+from .decorators import login_required
 bp = Blueprint("cms",__name__,url_prefix='/cms')
 
 @bp.route('/')
 def index():
+    print(g.cms_user)
     return render_template('cms/cms_index.html')
+
+@bp.route('/logout/',endpoint='logout')
+@login_required
+def logout():
+    del session[config.CMS_USER_ID]
+    return redirect(url_for('cms.login'))
+
+@bp.route('/profile/',endpoint='profile')
+@login_required
+def profile():
+    return render_template('cms/cms_profile.html')
 
 class LoginView(views.MethodView):
     def get(self,message=None):
