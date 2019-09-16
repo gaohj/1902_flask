@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
+    <script src="https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.js"></script>
+    <script src="{{ url_for('static',filename='qfqiniu.js') }}"></script>
+    <script>
+        window.onload = function () {
+            qfqiniu.setUp({
+                //七牛云https://portal.qiniu.com/bucket/bbs1902/index
+                //融合cdn测试域名
+                'domain':'http://pxwhlyank.bkt.clouddn.com/',
+                'browse_button':'upload-btn',
+                'uptoken_url':'/uptoken/',
+                'success':function (up,file,info) {
+                    var img_url = file.name
+                    {#console.log(img_url)#}
+                    var img_input = document.getElementById('img-input')
+                    img_input.value = img_url
+
+                    var img = document.getElementById('img')
+                    img.setAttribute('src',img_url)
+                }
+
+            })
+        }
+    </script>
+
+</head>
+<body>
+    <button id="upload-btn">上传文件</button>
+    <input type="text" name="img_url" id="img-input">
+    <img src="" alt="" id="img">
+</body>
+</html>
