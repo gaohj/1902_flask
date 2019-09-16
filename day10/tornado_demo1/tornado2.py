@@ -1,7 +1,8 @@
 import tornado.ioloop
 import tornado.web
 from tornado.options import define,parse_command_line,options  #这是全局方法
-
+#python manage.py -d -r -p 5051 --threaded 平滑重启 热重启
+##python tornado2.py --port=8081
 define('port',default=8080,type=int)
 #port 是 全局options的一个属性
 #如果不写 --port=8082  那么默认端口号 就是 8080
@@ -14,7 +15,7 @@ class IndexHandler(tornado.web.RequestHandler):
         name = self.get_argument('username')
 
         #渲染相应给浏览器的数据
-        self.write('hello %s  get' % name)
+        self.write('hello %s  get 666688888888888888' % name)
     def post(self):
         name = self.get_argument('username')
         self.write('hello %s  post' % name)
@@ -22,7 +23,8 @@ class IndexHandler(tornado.web.RequestHandler):
 def make_app():
     return tornado.web.Application(handlers=[
         (r'/',IndexHandler),
-    ])
+    ],autoreload=True,debug=True)
+#自动重启 开启debug模式  检测到代码修改重启服务
 
 #python tornado2.py --port=8081
 if __name__ == "__main__":
