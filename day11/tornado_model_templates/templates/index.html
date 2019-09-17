@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}tornadotornado首页{% end %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/base.css">
+<link rel="stylesheet" href="{{ static_url('css/index.css') }}">
+
+{% end %}
+
+{% block content %}
+
+    {{ items }}
+
+    {% for a in items %}
+        {% if a == 'Python' %}
+            <p style="color:white">{{a}}</p>
+        {% elif a == 'linux' %}
+            <p style="color:green">{{a}}</p>
+        {% else %}
+            <p>{{a}}</p>
+        {% end %}
+    {% end %}
+
+
+    {% set name='kangbazi' %}
+
+    {{ name }}
+
+    {#{% while len(items) %}
+        <p>{{ items.pop() }}</p>
+    {% end %}#}
+
+    {% try  %}
+        {{ items[0] }}
+    {% except %}
+        <p>越界了</p>
+    {% finally %}
+        <p>不管怎么着 我肯定执行</p>
+    {% end %}
+{% end %}
+
