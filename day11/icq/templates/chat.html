@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>聊天页面</title>
+    <title>Tornado聊天室</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
+<div>
+    <div style="font-weight:bold; font-size:2em;">
+        聊天室
+    </div>
+    <div class="content">
+        <div class="receive">
 
+        </div>
+        <div class="send">
+            <textarea id="send_content"> </textarea>
+            <br>
+            <button  id="btn" >发送</button>
+        </div>
+    </div>
+</div>
+<script>
+    // 创建一个websocket长连接对象
+    var _websocket= new WebSocket('ws://127.0.0.1:8085/chat/')
+    //发送消息
+    $('#btn').click(function(){
+        //获取消息内容
+        $msg=$('#send_content').val();
+        //发送消息
+        _websocket.send($msg);
+         $("#msg").val('');
+    })
+
+    //接收消息,当消息更新时自动触发
+    _websocket.onmessage=function(e){
+        console.log(e)
+        var $content=e.data;
+
+        //重构date的Format属性
+        Date.prototype.Format = function (fmt) {
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "H+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+            }
+
+            var date=new Date();
+            var $time=date.Format("yyyy年MM月dd HH:mm:ss");
+
+            // 添加内容到class为recceive的div框中
+            var $p1=$('<p style="color:red;">').text($content);
+            var $p2=$('<p style="color:#000000;">').text($time);
+            $('.receive').append($p2)
+            $('.receive').append($p1)
+    }
+</script>
 </body>
 </html>
