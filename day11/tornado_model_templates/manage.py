@@ -1,7 +1,7 @@
 
 import tornado.web
 import tornado.ioloop
-from app.views import IndexHandler
+from app.views import IndexHandler,DbHandler,DropDbHandler,AddDbHandler,StuHandler
 from utils.settings import TEMPLATE_PATH,STATIC_PATH
 from tornado.options import parse_command_line,define,options
 
@@ -10,6 +10,10 @@ define('port',default=80,type=int)
 def make_app():
     return tornado.web.Application(handlers=[
         (r'/',IndexHandler),
+        (r'/init_db',DbHandler),
+        (r'/drop_db',DropDbHandler),
+        (r'/add_db',AddDbHandler),
+        (r'/stu',StuHandler),
 
     ],
     template_path=TEMPLATE_PATH,
