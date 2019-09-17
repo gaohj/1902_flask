@@ -20,6 +20,6 @@ def make_app():
 if __name__ == "__main__":
     parse_command_line()
     app = make_app()
-    app.listen(options.port)
+    app.listen(options.port,address='0.0.0.0')
     tornado.ioloop.IOLoop.current().start()
 

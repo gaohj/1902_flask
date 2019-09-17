@@ -23,7 +23,7 @@
 </div>
 <script>
     // 创建一个websocket长连接对象
-    var _websocket= new WebSocket('ws://127.0.0.1:8085/chat/')
+    var _websocket= new WebSocket('ws://192.168.53.78:8085/chat/')
     //发送消息
     $('#btn').click(function(){
         //获取消息内容
@@ -32,7 +32,9 @@
         _websocket.send($msg);
          $("#msg").val('');
     })
-
+    _websocket.onopen = function(){
+        console.log('连接已经建立')
+    }
     //接收消息,当消息更新时自动触发
     _websocket.onmessage=function(e){
         console.log(e)
@@ -63,6 +65,14 @@
             var $p2=$('<p style="color:#000000;">').text($time);
             $('.receive').append($p2)
             $('.receive').append($p1)
+    }
+
+     _websocket.onerror = function(e){
+        console.log(e)
+    }
+
+     _websocket.onclose = function(){
+        console.log('连接已经关闭')
     }
 </script>
 </body>
