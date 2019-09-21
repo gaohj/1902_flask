@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bbae900-ff21-4ffa-a042-564a2f684008" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../day9/bbs/static/front/front_apost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../day9/bbs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day9/bbs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +111,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="299" />
     <option name="y" value="83" />
     <option name="width" value="1219" />
@@ -204,7 +203,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
