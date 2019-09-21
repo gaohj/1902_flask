@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="988f88f6-d3a6-41ca-9700-5b4444ae32a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/common/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/bbs_cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/common/js/ajax_1902.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/front/front_apost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day10/ueditor_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/ueditor_demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/common/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="12" />
-          <entry key="js" value="1" />
+          <entry key="js" value="3" />
           <entry key="py" value="48" />
         </counts>
       </usages-collector>
@@ -39,7 +39,7 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="12" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="3" />
           <entry key="Python" value="48" />
         </counts>
       </usages-collector>
@@ -47,12 +47,14 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="html" value="615" />
+          <entry key="js" value="399" />
           <entry key="py" value="4789" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="615" />
+          <entry key="JavaScript" value="399" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="4789" />
         </counts>
@@ -102,20 +104,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1568271591364" expanded="true" signature="147:152" ph="..." />
-                <marker date="1568271591364" expanded="true" signature="530:628" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -133,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/restful.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="25" />
               <folding>
                 <marker date="1569034447823" expanded="true" signature="201:206" ph="..." />
                 <marker date="1569034447823" expanded="true" signature="326:398" ph="..." />
@@ -156,17 +144,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/common/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="269">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
                 <marker date="1569048750867" expanded="true" signature="350:351" ph="..." />
                 <marker date="1569048750867" expanded="true" signature="350:355" ph="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/front/front_apost.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/common/js/ajax_1902.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378" />
           </provider>
         </entry>
       </file>
@@ -193,6 +197,7 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -234,6 +239,7 @@
         <option value="$PROJECT_DIR$/utils/bbs_cache.py" />
         <option value="$PROJECT_DIR$/apps/common/forms.py" />
         <option value="$PROJECT_DIR$/apps/common/views.py" />
+        <option value="$PROJECT_DIR$/static/front/front_apost.js" />
       </list>
     </option>
   </component>
@@ -270,19 +276,13 @@
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
@@ -310,17 +310,18 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../day10/ueditor_demo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\www\wh1902\flask\day9\bbs\static\cms" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\www\wh1902\flask\day9\bbs\templates\front" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\wh1902\flask\day9\bbs\static\common\js" />
+      <recent name="C:\www\wh1902\flask\day9\bbs\static\cms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -398,7 +399,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -642,18 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/restful.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <marker date="1569034447823" expanded="true" signature="201:206" ph="..." />
-            <marker date="1569034447823" expanded="true" signature="326:398" ph="..." />
-            <marker date="1569034447823" expanded="true" signature="434:439" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/jiangxiligong/test_36/Lib/site-packages/aliyunsdkcore/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -708,14 +696,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/common/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="269">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
             <marker date="1569048750867" expanded="true" signature="350:351" ph="..." />
             <marker date="1569048750867" expanded="true" signature="350:355" ph="..." />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/restful.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <marker date="1569034447823" expanded="true" signature="201:206" ph="..." />
+            <marker date="1569034447823" expanded="true" signature="326:398" ph="..." />
+            <marker date="1569034447823" expanded="true" signature="434:439" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/front/front_apost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/common/js/ajax_1902.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
       </provider>
     </entry>
   </component>
