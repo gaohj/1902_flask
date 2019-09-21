@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="988f88f6-d3a6-41ca-9700-5b4444ae32a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/restful.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/aliyun_sms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/bbs$aliyun_sms.coverage" NAME="aliyun_sms Coverage Results" MODIFIED="1569046781278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1181009931">
@@ -29,7 +30,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="12" />
           <entry key="js" value="1" />
-          <entry key="py" value="43" />
+          <entry key="py" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -37,21 +38,21 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="12" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="43" />
+          <entry key="Python" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
           <entry key="html" value="615" />
-          <entry key="py" value="4113" />
+          <entry key="py" value="4261" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="615" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="4113" />
+          <entry key="Python" value="4261" />
         </counts>
       </usages-collector>
     </session>
@@ -62,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/utils/sms_send.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <marker date="1569033152839" expanded="true" signature="598:645" ph="..." />
               </folding>
@@ -74,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/apps/cms/hooks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <marker date="1568275696041" expanded="true" signature="133:138" ph="..." />
@@ -139,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/restful.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="885">
@@ -153,23 +154,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cms/cms_index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/aliyun_sms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="11" column="11" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/cms/decorators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="126">
+              <caret line="5" selection-start-line="5" selection-end-line="26" selection-end-column="40" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <marker date="1568274891383" expanded="true" signature="143:295" ph="..." />
+                <element signature="e#111#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,6 +222,7 @@
         <option value="$PROJECT_DIR$/utils/restful.py" />
         <option value="$PROJECT_DIR$/apps/cms/forms.py" />
         <option value="$PROJECT_DIR$/apps/cms/views.py" />
+        <option value="$PROJECT_DIR$/utils/aliyun_sms.py" />
       </list>
     </option>
   </component>
@@ -291,6 +283,45 @@
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (test_36) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (test_36) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="test_36" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (test_36) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="test_36" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (test_36) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="test_36" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (test_36) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="test_36" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="aliyunsdkcore" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -326,7 +357,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.aliyun_sms">
+    <configuration name="aliyun_sms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bbs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/aliyun_sms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="bbs" type="Python.FlaskServer" factoryName="Flask server">
       <module name="bbs" />
       <option name="target" value="$PROJECT_DIR$/bbs.py" />
@@ -342,6 +395,15 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.bbs" />
+      <item itemvalue="Python.aliyun_sms" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.aliyun_sms" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -360,12 +422,12 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25716332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4541779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,8 +436,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32749325" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32614556" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -556,7 +618,7 @@
     <entry file="file://$PROJECT_DIR$/utils/sms_send.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <marker date="1569033152839" expanded="true" signature="598:645" ph="..." />
           </folding>
@@ -578,7 +640,7 @@
     <entry file="file://$PROJECT_DIR$/apps/cms/hooks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <marker date="1568275696041" expanded="true" signature="133:138" ph="..." />
@@ -630,6 +692,23 @@
             <marker date="1569034447823" expanded="true" signature="201:206" ph="..." />
             <marker date="1569034447823" expanded="true" signature="326:398" ph="..." />
             <marker date="1569034447823" expanded="true" signature="434:439" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jiangxiligong/test_36/Lib/site-packages/aliyunsdkcore/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="482" column="8" selection-start-line="482" selection-start-column="8" selection-end-line="482" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/aliyun_sms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="5" selection-start-line="5" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#111#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
