@@ -1,8 +1,3 @@
-#g4dRrretS3HDiACJuwkaUzoUgUG8C4
-#uXIWtuAQspvFqpCt
-#扛把子666
-#SMS_146806055
-
 from aliyunsdkcore.client import AcsClient
 from aliyunsdkcore.request import CommonRequest
 client = AcsClient('你的appkey id ', 'appkeysecret', 'cn-hangzhou')
