@@ -9,9 +9,11 @@ from flask import(
     g
 )
 import config
-from .forms import LoginForm
+from .forms import LoginForm,ResetPwdForm
 from .models import CMSUser
 from .decorators import login_required
+from utils import restful
+from exts import db
 bp = Blueprint("cms",__name__,url_prefix='/cms')
 
 @bp.route('/')
@@ -53,6 +55,22 @@ class LoginView(views.MethodView):
             message = form.get_errors()
             return self.get(message=message)
 
-
+class ResetPwdView(views.MethodView):
+    def get(self):
+        return render_template('cms/cms_reset_pwd.html')
+    def post(self):
+        form = ResetPwdForm(request.form)
+        if form.validate():
+            oldpassword = form.oldpwd.data
+            newpassword = form.newpwd.data
+            user = g.cms_user
+            if user.check_password(oldpassword):
+                user.password = newpassword
+                db.session.commit()
+                return restful.success(message="成功")
+            else:
+                return restful.params_error("旧密码验证错误")
+        else:
+            return restful.params_error(form.get_errors())
 
 bp.add_url_rule('/login/',view_func=LoginView.as_view('login'))
