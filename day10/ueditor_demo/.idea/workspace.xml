@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bbae900-ff21-4ffa-a042-564a2f684008" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../day9/bbs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day9/bbs/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9bbae900-ff21-4ffa-a042-564a2f684008" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +12,7 @@
     <session id="1104431336">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="2" />
